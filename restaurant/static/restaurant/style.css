@@ -1,0 +1,17 @@
+:root{color-scheme:light;--ink:#20372d;--olive:#486551;--line:#d8dfd3;--paper:#faf9f3;--gold:#f4ce4a}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:1rem/1.5 system-ui,sans-serif}
+.wrap{width:min(100% - 2.5rem,960px);margin-inline:auto}
+header{background:var(--ink);color:#fff}.bar,nav,footer{display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.bar{min-height:4.3rem}.brand{display:flex;align-items:center;gap:.6rem;font: bold 1.45rem Georgia,serif}
+.lemon{position:relative;display:inline-block;width:1.65rem;height:1.05rem;background:var(--gold);transform:rotate(-28deg);border-radius:70% 18%}
+nav{gap:1.4rem}a{color:inherit}.bar a{text-decoration:none}nav a{padding:.25rem 0;border-bottom:2px solid transparent}nav a[aria-current]{border-color:var(--gold)}
+main{padding-block:2.7rem 3rem}.kicker{color:var(--olive);font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;font-weight:700;margin:0 0 .45rem}
+h1,h2{font-family:Georgia,serif;font-weight:500;line-height:1.15;margin:0}h1{font-size:clamp(2.75rem,6vw,4.2rem)}h2{font-size:1.65rem;margin-bottom:1rem}
+.intro{margin:.65rem 0 1.7rem;color:#48594d}.grid{display:grid;grid-template-columns:1.1fr 1fr;gap:1.1rem;align-items:start}.card{background:white;border:1px solid var(--line);border-radius:12px;padding:clamp(1.2rem,3vw,2rem)}
+.daily{background:#eef2e9}.card p:first-child{margin-top:0}label{display:block;margin:.85rem 0 .25rem;font-weight:600}
+input,select,button{font:inherit;width:100%;padding:.6rem .75rem;border:1px solid #879889;border-radius:6px;color:var(--ink);background:white}
+button{cursor:pointer;font-weight:700;margin-top:1.2rem;background:var(--gold);border-color:var(--gold)}button:disabled,select:disabled{opacity:.65;cursor:default}option:disabled{color:#888} :focus-visible{outline:3px solid #397b68;outline-offset:2px}
+ul{list-style:none;padding:0}li{display:flex;gap:1.2rem;border-top:1px solid var(--line);padding:.5rem 0;overflow-wrap:anywhere}
+.detail-link{display:inline-block;margin-top:1.25rem;font-weight:600}.card #notice:empty{display:none}pre{background:var(--paper);border-radius:6px;padding:1rem;overflow:auto}
+footer{border-top:1px solid var(--line);padding-block:1rem;color:var(--olive);font-size:.9rem}
+@media(max-width:640px){.grid{grid-template-columns:1fr}.brand{font-size:1.2rem}.bar,nav{gap:.7rem}nav{font-size:.88rem}main{padding-top:2rem}}

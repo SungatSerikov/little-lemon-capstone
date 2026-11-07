@@ -1,0 +1,16 @@
+{% load static %}<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Little Lemon | Restaurant API</title>
+<link rel="stylesheet" href="{% static 'restaurant/style.css' %}">
+</head>
+<body>
+<header><div class="wrap bar"><a class="brand" href="/"><span class="lemon" aria-hidden="true"></span>Little Lemon</a><nav aria-label="Account"><a href="{% url 'rest_framework:login' %}?next=/">Sign in</a></nav></div></header>
+<main class="wrap">
+<h1>Restaurant API</h1>
+<p class="intro">Sign in to manage the menu and table reservations.</p>
+<div class="grid"><section class="card"><h2>Menu</h2><p>Manage dishes, prices and stock.</p><a class="detail-link" href="{% url 'menu-item-list' %}">Open menu API →</a></section>
+<section class="card daily"><h2>Table bookings</h2><p>View reservations and update party sizes or times.</p><a class="detail-link" href="{% url 'booking-list' %}">Open booking API →</a></section></div>
+</main><footer class="wrap">Little Lemon <span>Chicago, Illinois</span></footer>
+</body></html>
